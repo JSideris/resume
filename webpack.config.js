@@ -5,7 +5,7 @@ module.exports = {
     mode: 'development',
     devtool: 'inline-source-map',
     output: {
-        path: `${__dirname}/dist`,
+        path: `${__dirname}/docs`,
         filename: 'main.js',
     },
     // module: {
