@@ -43,7 +43,7 @@ export default ResumeMainPage = dot.component({
                 dot.br().h1("Relevant Professional Experience")
                 
                 .h2(dot.t("Software Engineering Team Lead - Ezra AI ").h(Italic("SERIES A")).t(" (August 2019 – Present) "))
-                .h(Xp("Delivered several new web applications, which automated business reporting and customer sign-ups."))
+                .h(Xp("Lead development on a 3D MRI viewer, automated business pipelines, reporting, and customer sign-ups."))
                 .h(Xp("Took on management and tech lead responsibilities for an Agile team. Managed 7 people over 2+ years."))
                 .h(Xp("Core platforms: Azure (microservices), .NET Core, Vue.js, SQL Server, HubSpot CRM."))
         
@@ -105,7 +105,7 @@ export default ResumeMainPage = dot.component({
         
                 .br().br().h1("Top Three Open-Source Projects")
                 .h2("DOThtml")
-                .h(Xp(dot.h("A powerful component-based framework for building websites in JavaScript. Modern functionality, but smaller, faster, and easier to use. Routing,  data binding, conditional rendering, style builder, and more! ").h(Https("dothtml.org"))))
+                .h(Xp(dot.h("A powerful component-based framework for building websites in TypeScript. Modern functionality, but smaller, faster, and easier to use. Routing, data binding, conditional rendering, style builder, and more! ").h(Https("dothtml.org"))))
         
                 .h2("Gear3Engine")
                 .h(Xp(dot.h("A fully functional game engine built from the ground up with an emphasis on cross-platform, low-latency, multiplayer web games. ").h(Https("gear3engine.com"))))
@@ -117,7 +117,7 @@ export default ResumeMainPage = dot.component({
                 .h2("Sites")
                 .h(Https("jsideris.com")).t(", ").h(Https("bizorke.com")).t(", ").h(Https("saucers.space")).t(", ").h(Http("ladonlabs.com"))
                 .h2("Social Media")
-                .h(Https("youtube.com/jsideris")).t(", ").h(Https("youtube.com/bizorke")).t(", ").h(Https("github.com/jsideris"))
+                .h(Https("youtube.com/JoshSideris")).t(", ").h(Https("youtube.com/bizorke")).t(", ").h(Https("github.com/jsideris"))
             ).class("page-content").style(dot.css.paddingTopIn(0.5))
         );
 
