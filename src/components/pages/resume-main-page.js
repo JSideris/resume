@@ -72,9 +72,9 @@ export default ResumeMainPage = dot.component({
                 // .h(Xp("Offered full front-line BlackBerry support to corporate, government and business customers."))
         
                 .br().h1("Notable Awards")
-                .b("Nicol Entrepreneurship Award ").i("National Winner").b(" (2014) ").h(Https("nicol.jsideris.com"))
-                .br().b("Bergeron Medal of Distinction in Science and Technology ").i("Inaugural Winner").b(" (2013) ").h(Https("bergeron.jsideris.com")) // https://web.archive.org/web/20161118025133/https://lassonde.yorku.ca/articles/lassonde-school-awards-bergeron-medal-distinction
-                .br().b("COM DEV Engineering Design Award ").i("for an Eye-Controlled Interface").b(" (2013) ").h(Https("tbd.jsideris.com"))
+                .b("Nicol Entrepreneurship Award ").i("National Winner").b(" (2014) ")//.h(Https("nicol.jsideris.com"))
+                .br().b("Bergeron Medal of Distinction in Science and Technology ").i("Inaugural Winner").b(" (2013) ")//.h(Https("bergeron.jsideris.com")) // https://web.archive.org/web/20161118025133/https://lassonde.yorku.ca/articles/lassonde-school-awards-bergeron-medal-distinction
+                .br().b("COM DEV Engineering Design Award ").i("for an Eye-Controlled Interface").b(" (2013) ")//.h(Https("tbd.jsideris.com"))
                 .br().b("York Engineering Competition ").i("3-Time 1st Place Winner").b(" | Ontario Engineering Competition ").i("Finalist").b(" (2010, 2011, 2012)")
         
                 .br().br()
