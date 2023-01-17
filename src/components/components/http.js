@@ -1,8 +1,7 @@
-import dot from "dothtml";
+import dot, { DotComponent } from "dothtml";
 
-var Http;
-export default Http = dot.component({
+export default class Http extends DotComponent{
     builder(content){
-	    return dot.a(content).href("http://" + content + "/").target("_blank");
+	    return dot.a(content).hRef("http://" + content + "/").target("_blank");
     }
-});
+};

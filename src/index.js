@@ -2,7 +2,7 @@ import dot from "dothtml";
 import ResumeMainPage from "./components/pages/resume-main-page";
 
 
-dot("body").h(ResumeMainPage());
+dot("body").h(new ResumeMainPage());
 
 dot.css("body")
 .backgroundColor("#555")
@@ -11,6 +11,7 @@ dot.css("body")
 .color("#111")
 .margin(0);
 
+// dot.css("table{}").borderSpacing(0); // Doesn't work yet.
 
 var globalStyles = `
     table{

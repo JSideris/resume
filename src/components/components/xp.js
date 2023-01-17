@@ -1,13 +1,12 @@
-import dot from "dothtml";
+import dot, { DotComponent } from "dothtml";
 
-var Xp;
-export default Xp = dot.component({ 
+export default class Xp extends DotComponent{ 
     builder(content){
-        return dot.table(dot.tbody(dot.tr(
+        return dot.table(dot.tBody(dot.tr(
             dot.td(dot.div()).class("xp-b")
             .td(content)
         )));
-    },
+    }
     style(css){
         css(".xp-b")
             .position("relative")
@@ -21,4 +20,4 @@ export default Xp = dot.component({
             .right(6)
             .backgroundColor("#A00");
     }
-});
+};

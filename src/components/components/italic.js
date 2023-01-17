@@ -1,8 +1,7 @@
-import dot from "dothtml";
+import dot, { DotComponent } from "dothtml";
 
-var Italic;
-export default Italic = dot.component({
+export default class Italic extends DotComponent{
     builder(content){
 	    return dot.span(content).style(dot.css.fontWeight("normal").fontStyle("italic").color(100,100,100))
     }
-});
+};

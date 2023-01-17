@@ -1,11 +1,9 @@
-import dot from "dothtml";
+import dot, { DotComponent } from "dothtml";
 
-var Page;
-
-export default Page = dot.component({
+export default class Page extends DotComponent{
     builder(content){
         return dot.div(content).class("page");
-    },
+    }
     style(css){
         css(".page").display("inline-block")
             .verticalAlign("top")
@@ -16,4 +14,4 @@ export default Page = dot.component({
             .marginIn(0.5)
             .boxShadow("0.1in 0.1in 0.05in #222")
     }
-});
+};

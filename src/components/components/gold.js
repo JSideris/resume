@@ -1,12 +1,11 @@
-import dot from "dothtml";
+import dot, { DotComponent } from "dothtml";
 
-var Gold;
-export default Gold = dot.component({
+export default class Gold extends DotComponent{
     builder(content){
 	    return dot.span(content).class("gold")
-    },
+    }
     style(css){
         css(".gold")
             .color(255, 200, 0);
     }
-});
+};
