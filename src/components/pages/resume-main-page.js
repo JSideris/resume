@@ -41,7 +41,7 @@ export default class ResumeMainPage extends DotComponent{
             ))).class("blue bold").style(dot.css.backgroundColor("#EEE").widthP(100).height(170))
             .div(
                 dot.br().h1("Relevant Professional Experience")
-                
+            
                 .h2(dot.t("Software Engineering Team Lead - Ezra AI ").h(new Italic("SERIES A")).t(" (August 2019 – July 2022     ) "))
                 .h(new Xp("Lead development on a 3D MRI viewer, automated business pipelines, reporting, and customer sign-ups."))
                 .h(new Xp("Took on management and tech lead responsibilities for an Agile team. Managed 7 people over 2+ years."))
@@ -105,7 +105,7 @@ export default class ResumeMainPage extends DotComponent{
         
                 .br().br().h1("Top Three Open-Source Projects")
                 .h2("DOThtml")
-                .h(new Xp(dot.h("A powerful component-based framework for building websites in JavaScript. Modern functionality, but smaller, faster, and easier to use. Routing,  data binding, conditional rendering, style builder, and more! ").h(new Https("dothtml.org"))))
+                .h(new Xp(dot.h("A powerful component-based framework for building websites in TypeScript. Modern functionality, but smaller, faster, and easier to use. Routing, data binding, conditional rendering, style builder, and more!").h(new Https("dothtml.org"))))
         
                 .h2("Gear3Engine")
                 .h(new Xp(dot.h("A fully functional game engine built from the ground up with an emphasis on cross-platform, low-latency, multiplayer web games. ").h(new Https("gear3engine.com"))))
