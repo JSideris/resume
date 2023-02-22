@@ -139,6 +139,9 @@ export default class ResumeMainPage extends DotComponent{
                 .h(new Https("youtube.com/jsideris"))
                     // .t(", ").h(new Https("youtube.com/bizorke"))
                     .t(", ").h(new Https("github.com/jsideris"))
+                .div(dot.span("This document was written entirely in JavaScript using DOThtml. Visit ").h(new Https("github.com/JSideris/resume")).span(" to learn more!")).style(
+                    dot.css.color("gray").position("absolute").rightIn(0.5).bottomIn(0.5)
+                )
             ).class("page-content").style(dot.css.paddingTopIn(0.5))
         );
 

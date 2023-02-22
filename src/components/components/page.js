@@ -5,7 +5,9 @@ export default class Page extends DotComponent{
         return dot.div(content).class("page");
     }
     style(css){
-        css(".page").display("inline-block")
+        css(".page")
+            .position("relative")
+            .display("inline-block")
             .verticalAlign("top")
             .widthIn(8.5)
             .heightIn(11)
