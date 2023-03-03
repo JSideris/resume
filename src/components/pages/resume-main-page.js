@@ -6,9 +6,39 @@ import Xp from "../components/xp";
 import Http from "../components/http";
 import Https from "../components/https";
 
+const tags = [
+    // "Software Engineering",
+    "Entrepreneurship",
+    "Full Stack",
+    "Cloud",
+    "UX",
+    "DX",
+    "Leadership",
+    //"Planning",
+    // "Robotics",
+    // "Economics",
+    // "Embedded Systems",
+];
+
 
 export default class ResumeMainPage extends DotComponent{
     builder(){
+        let pCover;
+        // let pCover = new Page(
+        //     dot.div(
+        //         dot.h1("Cover Letter")
+        //             // .h2("Joshua Sideris")
+        //             .p("Dear Hiring Manager,")
+        //             .p("I am excited to submit my application for Trans Power. As a software engineering team lead with a track record of successful projects, I am seeking a major career change to explore and learn new skill sets, ideally in the field of electrical engineering, with the goal of obtaining a license to practice professional engineering in Ontario.")
+        //             .p("I am confident that my diverse background and experience will enable me to excel in at your organization. I am eager to leverage my skills and cross-domain experience to contribute to the success of your organization and grow as a professional. Thank you for considering my application.")
+        //             .p("")
+        //             .p("Sincerely,")                  
+        //             .p("Joshua Sideris")
+        //             .p("")
+        //             .h2("2023-02-28")
+        //     ).class("page-content").style(dot.css.paddingTopIn(2).fontSize(24))
+        // );
+
         let p1 = new Page(
             dot.table(dot.tBody(dot.tr(
                 dot.td(
@@ -19,15 +49,11 @@ export default class ResumeMainPage extends DotComponent{
                     dot.table(dot.tBody(
                         dot.tr(dot.td(
                             dot
-                            .span("Entrepreneurship").h(new Gold(" &diams; "))
-                            .span("Full Stack").h(new Gold(" &diams; "))
-                            .span("Cloud").h(new Gold(" &diams; "))
-                            .span("UX").h(new Gold(" &diams; "))
-                            .span("DX").h(new Gold(" &diams; "))
-                            // .span("Embedded Systems").h(new Gold(" &diams; "))
-                            .span("Leadership")//.h(new Gold(" &diams; "))
-                            // .span("Robotics")//.h(new Gold(" &diams; "))
-                            //.span("Economics")
+                            .each(tags, (t, i)=>{
+                                return dot.span(t).when(()=>i<tags.length - 1, new Gold(" &diams; "))
+                                
+                            })
+
                         ).style(dot.css.fontSize(16)).id("skill-areas"))
                         .tr(dot.td(
                             dot.ul(
@@ -57,7 +83,7 @@ export default class ResumeMainPage extends DotComponent{
                 .h(new Xp("Core platforms: TypeScript, Node.js, MySQL, websockets, WebGL, WebAssembly, DOThtml responsive UI."))
                 
                 .br().h2("Cofounder and System Architect - Phashtag (November 2012 - September 2014),")
-                .h2("CEO, Consultant - Ladon Labs (formerly Phashtag) (September 2014 - December 2017)")
+                .h2("Founder - Ladon Labs (formerly Phashtag) (September 2014 - December 2017)")
                 .h(new Xp("Lead a small team of engineers to build several RESTful APIs for pattern recognition in images and videos."))
                 .h(new Xp("Wrote and maintained a business plan, lead the company through a major pivot, and raised $90,000 in funding."))
                 .h(new Xp("Drafted provisional patent applications for an automated point-of-sale image-recognition produce scanner."))
@@ -146,17 +172,19 @@ export default class ResumeMainPage extends DotComponent{
         );
 
         return dot.div(
-            dot.h(p1)
-            .h(p2)
-            .button("&#x1F5A8;&#xFE0F;").style(dot.css.position("fixed").top(2).right(2).height(60).width(60).fontSize(30).backgroundColor(200,200,200,0.8)).onClick(e=>{
-                dot.css(e.target).hide();
-                dot.css("body").backgroundColor("white");
-                dot.css(".page").margin(0).boxShadow("none");
-                window.print();
-                dot.css(e.target).show();
-                dot.css("body").backgroundColor("#555");
-                dot.css(".page").marginIn(0.5).boxShadow("0.1in 0.1in 0.05in #222");
-            })
+            dot
+                .when(pCover, ()=>pCover)
+                .h(p1)
+                .h(p2)
+                .button("&#x1F5A8;&#xFE0F;").style(dot.css.position("fixed").top(2).right(2).height(60).width(60).fontSize(30).backgroundColor(200,200,200,0.8)).onClick(e=>{
+                    dot.css(e.target).hide();
+                    dot.css("body").backgroundColor("white");
+                    dot.css(".page").margin(0).boxShadow("none");
+                    window.print();
+                    dot.css(e.target).show();
+                    dot.css("body").backgroundColor("#555");
+                    dot.css(".page").marginIn(0.5).boxShadow("0.1in 0.1in 0.05in #222");
+                })
         );
     }
 };
