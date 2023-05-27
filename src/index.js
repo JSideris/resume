@@ -6,7 +6,7 @@ dot("body").h(new ResumeMainPage());
 
 dot.css("body")
 .backgroundColor("#555")
-.fontFamily("Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif")
+.fontFamily("Calibri, Times New Roman")//, Try these on mac!: Optima, Roboto, Open Sans
 .fontSize(14.6)
 .color("#111")
 .margin(0);

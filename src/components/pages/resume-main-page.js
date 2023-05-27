@@ -69,10 +69,16 @@ export default class ResumeMainPage extends DotComponent{
             .div(
                 dot.br().h1("Relevant Professional Experience")
             
-                .h2(dot.t("Software Engineering Team Lead - Ezra AI ").h(new Italic("SERIES A")).t(" (August 2019 - July 2022     ) "))
+                // .h2(dot.t("Senior Software Engineer (Computer Graphics) - Luxolis")).t(" (October 2022 - Present)")
+                // .h(new Xp("Worked on a small team to implement visualizations and CAD tools for reconstructed 3D scenes/objects."))
+                // .h(new Xp("Lead development of a multi-user CAD tool. Users join a scene as 3D avatars with voice chat to work together."))
+                // .h(new Xp("Core platforms: WebGL, THREE.js, GLSL, JavaScript, Node.js, AWS, Docker."))
+
+
+                .h2(dot.t("Software Engineering Team Lead - Ezra AI ").h(new Italic("SERIES A")).t(" (August 2019 - July 2022)"))
                 .h(new Xp("Lead development on a 3D MRI viewer, automated business pipelines, reporting, and customer sign-ups."))
                 .h(new Xp("Took on management and tech lead responsibilities for an Agile team. Managed 7 people over 2+ years."))
-                .h(new Xp("Core platforms: Azure (microservices), .NET Core, Vue.js, SQL Server, HubSpot CRM."))
+                .h(new Xp("Core platforms: Azure (microservices), .NET Core, Vue.js, TypeScript, SQL Server, HubSpot CRM."))
         
                 .br().h2(dot.t("Full Stack Developer (.NET Core 2.0) - Dapasoft ").t(" (January 2019 - July 2019) "))
                 .h(new Xp("Worked on a fiercely-tight schedule to deliver medical integration software on an Agile team."))
@@ -89,20 +95,18 @@ export default class ResumeMainPage extends DotComponent{
                 .h(new Xp("Drafted provisional patent applications for an automated point-of-sale image-recognition produce scanner."))
                 .h(new Xp("Configured and managed MS/Linux servers, as well as many client/server applications (both local and on the cloud)."))
                 .h(new Xp("Built a piracy-tracking platform for high-value video assets, and a portfolio of innovative web/desktop applications."))
-                .h(new Xp("Core platforms: C#, Windows Server, IIS 6/7/8, .Net, ASP.NET: MVC and Web API, SQL Server 2012, JavaScript."))
+                .h(new Xp("Core platforms: C#, Windows Server, IIS 8, ASP.NET: MVC and Web API, SQL Server 2012, JavaScript."))
         
                 .br().h2("Radio Tools Developer - Research in Motion (May 2012 - August 2013)")
                 .h(new Xp("Full stack support for a BlackBerry radio automated-testing enterprise solution, and REST API."))
                 .h(new Xp("Core platforms: ASP.NET, IIS 6, SQL Server, SSRS, Apache Tomcat, GWT, Razor, Webforms, C#, Java, C++."))
                 
-                // .br().h2("Business Technical Solutions Consultant - Rogers Communications Inc. (September 2007 - August 2008)")
-                // .h(new Xp("Offered full front-line BlackBerry support to corporate, government and business customers."))
-        
                 .br().h1("Notable Awards")
                 .b("Nicol Entrepreneurship Award ").i("National Winner").b(" (2014) ")//.h(new Https("nicol.jsideris.com"))
                 .br().b("Bergeron Medal of Distinction in Science and Technology ").i("Inaugural Winner").b(" (2013) ")//.h(new Https("bergeron.jsideris.com")) // https://web.archive.org/web/20161118025133/https://lassonde.yorku.ca/articles/lassonde-school-awards-bergeron-medal-distinction
                 .br().b("COM DEV Engineering Design Award ").i("for an Eye-Controlled Interface").b(" (2013) ")//.h(new Https("tbd.jsideris.com"))
                 .br().b("York Engineering Competition ").i("3-Time 1st Place Winner").b(" | Ontario Engineering Competition ").i("Finalist").b(" (2010, 2011, 2012)")
+                // .br()
         
                 .br().br()
                 .h1("Publications")
@@ -148,6 +152,8 @@ export default class ResumeMainPage extends DotComponent{
                     ).style(dot.css.widthP(50))
                 ).style(dot.css.display("flex"))
                 .br()
+
+
                 // .h2("DOThtml")
                 // .h(new Xp())
         
