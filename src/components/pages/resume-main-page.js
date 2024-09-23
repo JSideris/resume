@@ -10,9 +10,11 @@ const tags = [
     // "Software Engineering",
     "Entrepreneurship",
     "Full Stack",
-    "Cloud",
+    // "Cloud",
+    "Game Engine",
     "UX",
-    "DX",
+    //"DX",
+    "IoT",
     "Leadership",
     //"Planning",
     // "Robotics",
@@ -57,9 +59,10 @@ export default class ResumeMainPage extends DotComponent{
                         ).style(dot.css.fontSize(16)).id("skill-areas"))
                         .tr(dot.td(
                             dot.ul(
-                                dot.li("&#x1F310; jsideris.com")
+                                dot
+                                // .li("&#x1F310; jsideris.com")
                                 .li("&#x1F4DE; 647-202-5610")
-                                .li("&#x1F4EC; jsideris@jsideris.com")
+                                .li("&#x1F4EC; josh.sideris@gmail.com")
                                 .li("&#x1F3D9;&#xFE0F; Toronto")
                             ).style(dot.css.listStyleType("none"))
                         ).style(dot.css.fontSize(16)).class("black"))
@@ -69,22 +72,24 @@ export default class ResumeMainPage extends DotComponent{
             .div(
                 dot.br().h1("Relevant Professional Experience")
             
-                // .h2(dot.t("Senior Software Engineer (Computer Graphics) - Luxolis")).t(" (October 2022 - Present)")
-                // .h(new Xp("Worked on a small team to implement visualizations and CAD tools for reconstructed 3D scenes/objects."))
-                // .h(new Xp("Lead development of a multi-user CAD tool. Users join a scene as 3D avatars with voice chat to work together."))
-                // .h(new Xp("Core platforms: WebGL, THREE.js, GLSL, JavaScript, Node.js, AWS, Docker."))
-
+                .h2(dot.t("Senior Software Engineer (Computer Graphics) - Luxolis").t(" (April 3 2023 - Present)"))
+                .h(new Xp("Worked on a small team to implement visualizations and CAD tools for reconstructed 3D scenes/objects."))
+                .h(new Xp("Lead development of a multi-user CAD tool. Users join a scene as 3D avatars with voice chat to work together."))
+                .h(new Xp("Core platforms: WebGL, THREE.js, GLSL, JavaScript, Node.js, AWS, Docker."))
+                .br()
 
                 .h2(dot.t("Software Engineering Team Lead - Ezra AI ").h(new Italic("SERIES A")).t(" (August 2019 - July 2022)"))
                 .h(new Xp("Lead development on a 3D MRI viewer, automated business pipelines, reporting, and customer sign-ups."))
                 .h(new Xp("Took on management and tech lead responsibilities for an Agile team. Managed 7 people over 2+ years."))
                 .h(new Xp("Core platforms: Azure (microservices), .NET Core, Vue.js, TypeScript, SQL Server, HubSpot CRM."))
+                .br()
         
-                .br().h2(dot.t("Full Stack Developer (.NET Core 2.0) - Dapasoft ").t(" (January 2019 - July 2019) "))
+                .h2(dot.t("Full Stack Developer (.NET Core 2.0) - Dapasoft ").t(" (January 2019 - July 2019) "))
                 .h(new Xp("Worked on a fiercely-tight schedule to deliver medical integration software on an Agile team."))
                 .h(new Xp("Core platforms: .NET Core, Angular 6, Identity Server 4, SQL Server, Entity Framework."))
-                
-                .br().h2(dot.t("Independent Game Designer - Gear3Games - Saucers.Space ").h(new Italic("SUCCESSFUL KICKSTARTER")).t(" (December 2017 - Present)"))
+                .br()
+
+                .h2(dot.t("Independent Game Designer - Gear3Games - Saucers.Space ").h(new Italic("SUCCESSFUL KICKSTARTER")).t(" (December 2017 - Present)"))
                 .h(new Xp("Designed and implemented a game engine supporting 100s of concurrent users in real time."))
                 .h(new Xp("Core platforms: TypeScript, Node.js, MySQL, websockets, WebGL, WebAssembly, DOThtml responsive UI."))
                 
@@ -94,21 +99,15 @@ export default class ResumeMainPage extends DotComponent{
                 .h(new Xp("Wrote and maintained a business plan, lead the company through a major pivot, and raised $90,000 in funding."))
                 .h(new Xp("Drafted provisional patent applications for an automated point-of-sale image-recognition produce scanner."))
                 .h(new Xp("Configured and managed MS/Linux servers, as well as many client/server applications (both local and on the cloud)."))
-                .h(new Xp("Built a piracy-tracking platform for high-value video assets, and a portfolio of innovative web/desktop applications."))
+                .h(new Xp("Built a piracy-tracking platform for high-value video assets and a portfolio of innovative web/desktop applications."))
                 .h(new Xp("Core platforms: C#, Windows Server, IIS 8, ASP.NET: MVC and Web API, SQL Server 2012, JavaScript."))
-        
-                .br().h2("Radio Tools Developer - Research in Motion (May 2012 - August 2013)")
-                .h(new Xp("Full stack support for a BlackBerry radio automated-testing enterprise solution, and REST API."))
+                .br()
+
+                .h2("Radio Tools Developer - Research in Motion (May 2012 - August 2013)")
+                .h(new Xp("Full stack support for a BlackBerry radio automated-testing enterprise solution and REST API."))
                 .h(new Xp("Core platforms: ASP.NET, IIS 6, SQL Server, SSRS, Apache Tomcat, GWT, Razor, Webforms, C#, Java, C++."))
-                
-                .br().h1("Notable Awards")
-                .b("Nicol Entrepreneurship Award ").i("National Winner").b(" (2014) ")//.h(new Https("nicol.jsideris.com"))
-                .br().b("Bergeron Medal of Distinction in Science and Technology ").i("Inaugural Winner").b(" (2013) ")//.h(new Https("bergeron.jsideris.com")) // https://web.archive.org/web/20161118025133/https://lassonde.yorku.ca/articles/lassonde-school-awards-bergeron-medal-distinction
-                .br().b("COM DEV Engineering Design Award ").i("for an Eye-Controlled Interface").b(" (2013) ")//.h(new Https("tbd.jsideris.com"))
-                .br().b("York Engineering Competition ").i("3-Time 1st Place Winner").b(" | Ontario Engineering Competition ").i("Finalist").b(" (2010, 2011, 2012)")
-                // .br()
+                .br()
         
-                .br().br()
                 .h1("Publications")
                 .span("Foad Hamidi, Thomas S. Young, Josh Sideris, Ramtin Ardeshiri, Jacob Leung, Pouya Rezai, and Barbara Whitmer 2017, Using Robotics and 3D Printing to Introduce Youth to Computer Science and Electromechanical Engineering")
                 .br().span("In ").b(dot.i("Proceedings of the 2017 CHI Conference Extended Abstracts on Human Factors in Computing Systems")).span(" (CHI EA '17).")
@@ -117,24 +116,32 @@ export default class ResumeMainPage extends DotComponent{
                 .br().br().span("Joshua Sideris 2015")
                 .br().span("POINT OF SALE SYSTEM, SCANNER, AND METHOD, United States Patent Application No. 62/236283.")
                 .br().span("A hand-held scanner for automatic produce recognition using machine learning.")
-                .br().span("USPTO. Document: ").a("https://jsideris.com/documents/pepi.pdf").hRef("https://jsideris.com/documents/pepi.pdf").target("_blank")
+                .br().span("USPTO. Document: ").a("https://jsideris.github.io/documents/pepi.pdf").hRef("https://jsideris.github.io/documents/pepi.pdf").target("_blank")
             ).class("page-content")
             .div().style(dot.css.height(48))
 
         );
         let p2 = new Page(
             dot.div(
-                dot.h1("Education, Personal Development, and Leadership")
+                dot.h1("Notable Awards")
+                .b("Nicol Entrepreneurship Award ").i("National Winner").b(" (2014) ")//.h(new Https("nicol.jsideris.com"))
+                .br().b("Bergeron Medal of Distinction in Science and Technology ").i("Inaugural Winner").b(" (2013) ")//.h(new Https("bergeron.jsideris.com")) // https://web.archive.org/web/20161118025133/https://lassonde.yorku.ca/articles/lassonde-school-awards-bergeron-medal-distinction
+                .br().b("COM DEV Engineering Design Award ").i("for an Eye-Controlled Interface").b(" (2013) ")//.h(new Https("tbd.jsideris.com"))
+                .br().b("York Engineering Competition ").i("3-Time 1st Place Winner").b(" | Ontario Engineering Competition ").i("Finalist").b(" (2010, 2011, 2012)")
+                .br()
+                .br()
+
+                .h1("Education, Personal Development, and Leadership")
                 .h2("Lassonde School of Engineering at York University")
                 .h(new Xp("BEng Honors program with a specialization in computer engineering."))
                 .h2("Next Canada via University of Toronto (2013 Cohort)")
                 .h(new Xp("Selected among Canada's top 36 student entrepreneurs via a rigorous national selection process to receive 8 months of mentorship from some of Canada’s top business leaders, a comprehensive offering of in-kind resources, and academic instruction from some of the world’s top faculty."))
                 .h2("York Entrepreneurship Development Institute via Schulich School of Business (2015 Cohort)")
-                .h(new Xp("Selected among 30 of Canada's top young entrepreneurs to take part in Canada's YEDi incubator program and venture fund, received mentorship from key industry leaders and competed for over $100k in seed funding."))
+                .h(new Xp("Selected among 30 of Canada's top young entrepreneurs to take part in Canada's YEDi incubator program and venture fund, received mentorship from key industry leaders, and competed for over $100k in seed funding."))
                 .h2("Founder of Robot Fighting Club @ YorkU (2010), Robogals Chapter @ YorkU (2012)")
-                .h(new Xp("Hosted seminars and competitions for YorkU community, and designed an ambitious 120-pound killer pneumatic-axe-wielding robot to compete in RoboGames. In 2012, we became the first Canadian chapter of Robogals - an organization promoting women in STEM by teaching young girls how to build robots."))
+                .h(new Xp("Hosted seminars and competitions for YorkU community and designed an ambitious 120-pound killer pneumatic-axe-wielding robot to compete in RoboGames. In 2012, we became the first Canadian chapter of Robogals (an organization promoting women in STEM by teaching young girls how to build robots)."))
         
-                .br().h1("Main Projects (That I Spend 80% of my Spare Time On)")
+                .br().h1("Main Projects")
                 .div(
                     dot.div(dot
                         .img().src(require("../../assets/dothtml.png").default).width(100).style(dot.css.display("block").marginLeft("auto").marginRight("auto"))
@@ -166,7 +173,8 @@ export default class ResumeMainPage extends DotComponent{
                 // .br()
                 .br().h1("Other Personal Websites")
                 .h2("Sites")
-                .h(new Https("jsideris.com")).t(", ").h(new Https("bizorke.com")).t(", ").h(new Https("saucers.space")).t(", ").h(new Http("ladonlabs.com"))
+                // .h(new Https("jsideris.com")).t(", ")
+                .h(new Https("bizorke.com")).t(", ").h(new Https("saucers.space")).t(", ").h(new Http("ladonlabs.com"))
                 .h2("Social Media")
                 .h(new Https("youtube.com/jsideris"))
                     // .t(", ").h(new Https("youtube.com/bizorke"))
